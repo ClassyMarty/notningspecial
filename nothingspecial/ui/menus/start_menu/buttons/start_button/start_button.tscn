@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://clbpestww27j7"]
+
+[ext_resource type="Theme" uid="uid://cqvxvih8yn6na" path="res://ui/ui_resources/ui_themes/ui_theme-Pixel.tres" id="1_uuktu"]
+[ext_resource type="Script" uid="uid://bdnb4xwyhoie7" path="res://ui/menus/start_menu/buttons/start_button/start_button.gd" id="2_k7nd1"]
+
+[node name="StartButton" type="Button"]
+theme = ExtResource("1_uuktu")
+text = "Start"
+script = ExtResource("2_k7nd1")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3ovyi117atxx"]
+
+[ext_resource type="Theme" uid="uid://cqvxvih8yn6na" path="res://ui/ui_resources/ui_themes/ui_theme-Pixel.tres" id="1_l5fqr"]
+[ext_resource type="Script" uid="uid://d0veofrqujyy1" path="res://ui/menus/start_menu/buttons/options_button/options_button.gd" id="2_wcc0l"]
+
+[node name="OptionsButton" type="Button"]
+theme = ExtResource("1_l5fqr")
+text = "Options"
+script = ExtResource("2_wcc0l")
+
+[connection signal="pressed" from="." to="." method="_on_pressed"]

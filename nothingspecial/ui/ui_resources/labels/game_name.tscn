@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://8042v50skxgy"]
+
+[ext_resource type="Theme" uid="uid://cqvxvih8yn6na" path="res://ui/ui_resources/ui_themes/ui_theme-Pixel.tres" id="1_5kpul"]
+
+[node name="GameName" type="Label"]
+theme = ExtResource("1_5kpul")
+text = "Micro Games!"

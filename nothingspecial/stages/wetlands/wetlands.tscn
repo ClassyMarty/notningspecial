@@ -1,0 +1,33 @@
+[gd_scene load_steps=4 format=4 uid="uid://ddkg5yyg55ngw"]
+
+[ext_resource type="Texture2D" uid="uid://bkv1qryimhcew" path="res://stages/wetlands/components/terrain/dirt_tileset_1.png" id="1_gc5g3"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2vxwq"]
+texture = ExtResource("1_gc5g3")
+texture_region_size = Vector2i(32, 32)
+0:0/0 = 0
+1:0/0 = 0
+2:0/0 = 0
+0:1/0 = 0
+1:1/0 = 0
+2:1/0 = 0
+0:2/0 = 0
+1:2/0 = 0
+2:2/0 = 0
+0:3/0 = 0
+1:3/0 = 0
+2:3/0 = 0
+0:4/0 = 0
+1:4/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_jv5hh"]
+tile_size = Vector2i(32, 32)
+sources/0 = SubResource("TileSetAtlasSource_2vxwq")
+
+[node name="Wetlands" type="Node2D"]
+
+[node name="Terrain" type="Node" parent="."]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="Terrain"]
+tile_map_data = PackedByteArray("AAAIAAkAAAAAAAIAAAAJAAkAAAABAAIAAAAKAAkAAAABAAIAAAALAAkAAAABAAIAAAAMAAkAAAACAAIAAAAMAAgAAAACAAIAAAALAAgAAAABAAIAAAAKAAgAAAABAAIAAAAJAAgAAAABAAIAAAAIAAgAAAAAAAIAAAAIAAcAAAAAAAEAAAAJAAcAAAABAAEAAAAKAAcAAAABAAEAAAALAAcAAAABAAEAAAAMAAcAAAACAAEAAAANAAYAAAACAAAAAAAMAAYAAAABAAAAAAALAAYAAAABAAAAAAAKAAYAAAABAAAAAAAJAAYAAAABAAAAAAAIAAYAAAABAAAAAAAHAAYAAAAAAAAAAAAIAAoAAAAAAAMAAAAMAAoAAAACAAMAAAALAAoAAAABAAMAAAAKAAoAAAABAAMAAAAJAAoAAAABAAMAAAAIAAsAAAAAAAQAAAAJAAsAAAAAAAQAAAAKAAsAAAAAAAQAAAALAAsAAAAAAAQAAAAMAAsAAAAAAAQAAAA=")
+tile_set = SubResource("TileSet_jv5hh")
